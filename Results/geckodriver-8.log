@@ -1,0 +1,28 @@
+1706550189733	geckodriver	INFO	Listening on 127.0.0.1:58813
+1706550190272	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/xj/ryfqf_996gg4ztxq4sfr3t340000gn/T/rust_mozprofileeLI0Cx"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706550190795	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1706550191256	Marionette	INFO	Listening on port 58818
+WebDriver BiDi listening on ws://127.0.0.1:58814
+2024-01-29 18:43:11.381 plugin-container[36528:499045] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2024-01-29 18:43:11.381 plugin-container[36528:499045] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2024-01-29 18:43:11.387 plugin-container[36528:499045] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2024-01-29 18:43:11.387 plugin-container[36528:499045] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2024-01-29 18:43:11.387 plugin-container[36528:499043] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2024-01-29 18:43:11.387 plugin-container[36528:499043] nil host used in call to allowsAnyHTTPSCertificateForHost:
+Read port: 58818
+1706550191596	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58814/devtools/browser/e41eafd3-e394-47b8-ba59-4c146f3efe8b
+2024-01-29 17:43:14.082 plugin-container[36538:499296] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2024-01-29 17:43:14.083 plugin-container[36538:499296] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2024-01-29 17:43:14.089 plugin-container[36538:499296] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2024-01-29 17:43:14.089 plugin-container[36538:499296] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2024-01-29 17:43:14.090 plugin-container[36538:499310] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2024-01-29 17:43:14.090 plugin-container[36538:499310] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://conduit.mate.academy."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://conduit.mate.academy."
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 60: Error: Can't find profile directory.
+1706550221019	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1706550310591	Marionette	INFO	Stopped listening on port 58818

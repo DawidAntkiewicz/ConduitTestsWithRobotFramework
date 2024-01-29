@@ -1,56 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.10.11 on darwin)" generated="2024-01-26T14:22:18.235227" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.10.11 on darwin)" generated="2024-01-29T19:01:48.775455" rpa="false" schemaversion="5">
 <suite id="s1" name="updateUserSettings" source="/Users/antkiew/VSC_DawidAntkiewicz/ConduitTestswithRobotFramework/Tests/updateUserSettings.robot">
-<test id="s1-t1" name="Change User Settings" line="11">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-01-26T14:22:18.845879" level="INFO">Opening browser 'ff' to base url 'https://conduit.mate.academy/'.</msg>
+<test id="s1-t1" name="Change User Settings" line="16">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-01-29T19:01:50.039235" level="INFO">Opening browser 'ff' to base url 'https://conduit.mate.academy/'.</msg>
 <arg>${url}</arg>
 <arg>ff</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-01-26T14:22:18.845368" elapsed="6.770630"/>
+<status status="PASS" start="2024-01-29T19:01:50.038673" elapsed="9.143137"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-01-26T14:22:25.619651" level="INFO">Clicking link 'link:Sign in'.</msg>
+<msg time="2024-01-29T19:01:59.186022" level="INFO">Clicking link 'link:Sign in'.</msg>
 <arg>link:Sign in</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-26T14:22:25.617588" elapsed="3.578498"/>
+<status status="PASS" start="2024-01-29T19:01:59.185083" elapsed="4.357306"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-01-26T14:22:29.197698" level="INFO">Typing text 'emailuzytkownika1@test.com' into text field 'xpath://*[@placeholder="Email"]'.</msg>
+<msg time="2024-01-29T19:02:03.543809" level="INFO">Typing text 'emailuzytkownika1@test.com' into text field 'xpath://*[@placeholder="Email"]'.</msg>
 <arg>xpath://*[@placeholder="Email"]</arg>
 <arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-26T14:22:29.196777" elapsed="0.075009"/>
+<status status="PASS" start="2024-01-29T19:02:03.542919" elapsed="0.098829"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-01-26T14:22:29.273245" level="INFO">Typing text 'Testing123!' into text field 'xpath://*[@placeholder="Password"]'.</msg>
+<msg time="2024-01-29T19:02:03.642938" level="INFO">Typing text 'Testing123!' into text field 'xpath://*[@placeholder="Password"]'.</msg>
 <arg>xpath://*[@placeholder="Password"]</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-26T14:22:29.272426" elapsed="0.036596"/>
+<status status="PASS" start="2024-01-29T19:02:03.642339" elapsed="0.040991"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-01-26T14:22:29.310688" level="INFO">Clicking button 'xpath://*[@type="submit"]'.</msg>
+<msg time="2024-01-29T19:02:03.684154" level="INFO">Clicking button 'xpath://*[@type="submit"]'.</msg>
 <arg>xpath://*[@type="submit"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-26T14:22:29.309700" elapsed="0.243920"/>
+<status status="PASS" start="2024-01-29T19:02:03.683764" elapsed="0.339581"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-01-26T14:22:29.554572" level="INFO">Clicking link 'link:Settings'.</msg>
+<msg time="2024-01-29T19:02:04.026927" level="INFO">Clicking link 'link:Settings'.</msg>
 <arg>link:Settings</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-26T14:22:29.554205" elapsed="3.023191"/>
+<status status="PASS" start="2024-01-29T19:02:04.026161" elapsed="3.824223"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-01-26T14:22:32.580362" level="FAIL">Variable '${new_username}' not found.</msg>
+<msg time="2024-01-29T19:02:07.853520" level="INFO">Typing text 'uzytkownik31' into text field 'xpath://*[@placeholder="Username"]'.</msg>
 <arg>xpath://*[@placeholder="Username"]</arg>
-<arg>${new_username}</arg>
+<arg>${newUsername}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="FAIL" start="2024-01-26T14:22:32.578198" elapsed="0.002353">Variable '${new_username}' not found.</status>
+<status status="PASS" start="2024-01-29T19:02:07.852114" elapsed="0.263333"/>
 </kw>
-<status status="FAIL" start="2024-01-26T14:22:18.843877" elapsed="13.737510">Variable '${new_username}' not found.</status>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-29T19:02:08.116524" level="INFO">Typing text 'This bio is put here thanks to the robot framework' into text field 'xpath://*[@placeholder="Short bio about you"]'.</msg>
+<arg>xpath://*[@placeholder="Short bio about you"]</arg>
+<arg>${bio}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T19:02:08.115943" elapsed="0.888944"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-01-29T19:02:09.006157" level="INFO">Clicking button 'xpath://*[@type="submit"]'.</msg>
+<arg>xpath://*[@type="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T19:02:09.005626" elapsed="0.239873"/>
+</kw>
+<kw name="Page Should Contain Link" owner="SeleniumLibrary">
+<msg time="2024-01-29T19:02:09.391046" level="INFO">Current page contains link 'link:uzytkownik31'.</msg>
+<arg>link:${newUsername}</arg>
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<status status="PASS" start="2024-01-29T19:02:09.246556" elapsed="0.144635"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-01-29T19:02:09.391909" level="INFO">Clicking link 'link:Settings'.</msg>
+<arg>link:Settings</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T19:02:09.391552" elapsed="0.349516"/>
+</kw>
+<kw name="Textarea Should Contain" owner="SeleniumLibrary">
+<msg time="2024-01-29T19:02:10.075082" level="INFO">Text area 'xpath://*[@placeholder="Short bio about you"]' contains text 'This bio is put here thanks to the robot framework'.</msg>
+<arg>xpath://*[@placeholder="Short bio about you"]</arg>
+<arg>${bio}</arg>
+<doc>Verifies text area ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2024-01-29T19:02:09.741820" elapsed="0.333415"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-01-29T19:02:10.076389" level="INFO">Clicking button 'class:btn btn-outline-danger'.</msg>
+<msg time="2024-01-29T19:02:10.193879" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-01-29T19:02:10.194667" level="FAIL">Button with locator 'class:btn btn-outline-danger' not found.</msg>
+<arg>class:btn btn-outline-danger</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2024-01-29T19:02:10.075847" elapsed="0.124945">Button with locator 'class:btn btn-outline-danger' not found.</status>
+</kw>
+<status status="FAIL" start="2024-01-29T19:01:50.036843" elapsed="20.164564">Button with locator 'class:btn btn-outline-danger' not found.</status>
 </test>
-<status status="FAIL" start="2024-01-26T14:22:18.241679" elapsed="14.341324"/>
+<status status="FAIL" start="2024-01-29T19:01:48.779433" elapsed="21.423514"/>
 </suite>
 <statistics>
 <total>
@@ -63,7 +103,7 @@
 </suite>
 </statistics>
 <errors>
-<msg time="2024-01-26T14:22:18.350877" level="ERROR">Error in file '/Users/antkiew/VSC_DawidAntkiewicz/ConduitTestswithRobotFramework/Tests/updateUserSettings.robot' on line 2: Processing variable file '/Users/antkiew/VSC_DawidAntkiewicz/ConduitTestswithRobotFramework/Resources/variables.py' failed: Importing variable file '/Users/antkiew/VSC_DawidAntkiewicz/ConduitTestswithRobotFramework/Resources/variables.py' failed: TypeError: can only concatenate str (not "int") to str
+<msg time="2024-01-29T19:01:48.880010" level="ERROR">Error in file '/Users/antkiew/VSC_DawidAntkiewicz/ConduitTestswithRobotFramework/Tests/updateUserSettings.robot' on line 2: Processing variable file '/Users/antkiew/VSC_DawidAntkiewicz/ConduitTestswithRobotFramework/Resources/variables.py' failed: Importing variable file '/Users/antkiew/VSC_DawidAntkiewicz/ConduitTestswithRobotFramework/Resources/variables.py' failed: TypeError: can only concatenate str (not "int") to str
 Traceback (most recent call last):
   File "/Users/antkiew/VSC_DawidAntkiewicz/ConduitTestswithRobotFramework/Resources/variables.py", line 4, in &lt;module&gt;
     new_username='uzytkownik' + random_number
