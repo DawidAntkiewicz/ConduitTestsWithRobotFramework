@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.10.11 on darwin)" generated="2024-01-26T14:22:18.235227" rpa="false" schemaversion="5">
+<suite id="s1" name="updateUserSettings" source="/Users/antkiew/VSC_DawidAntkiewicz/ConduitTestswithRobotFramework/Tests/updateUserSettings.robot">
+<test id="s1-t1" name="Change User Settings" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-01-26T14:22:18.845879" level="INFO">Opening browser 'ff' to base url 'https://conduit.mate.academy/'.</msg>
+<arg>${url}</arg>
+<arg>ff</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-26T14:22:18.845368" elapsed="6.770630"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-01-26T14:22:25.619651" level="INFO">Clicking link 'link:Sign in'.</msg>
+<arg>link:Sign in</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-26T14:22:25.617588" elapsed="3.578498"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-26T14:22:29.197698" level="INFO">Typing text 'emailuzytkownika1@test.com' into text field 'xpath://*[@placeholder="Email"]'.</msg>
+<arg>xpath://*[@placeholder="Email"]</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-26T14:22:29.196777" elapsed="0.075009"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-26T14:22:29.273245" level="INFO">Typing text 'Testing123!' into text field 'xpath://*[@placeholder="Password"]'.</msg>
+<arg>xpath://*[@placeholder="Password"]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-26T14:22:29.272426" elapsed="0.036596"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-01-26T14:22:29.310688" level="INFO">Clicking button 'xpath://*[@type="submit"]'.</msg>
+<arg>xpath://*[@type="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-26T14:22:29.309700" elapsed="0.243920"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-01-26T14:22:29.554572" level="INFO">Clicking link 'link:Settings'.</msg>
+<arg>link:Settings</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-26T14:22:29.554205" elapsed="3.023191"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-26T14:22:32.580362" level="FAIL">Variable '${new_username}' not found.</msg>
+<arg>xpath://*[@placeholder="Username"]</arg>
+<arg>${new_username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-01-26T14:22:32.578198" elapsed="0.002353">Variable '${new_username}' not found.</status>
+</kw>
+<status status="FAIL" start="2024-01-26T14:22:18.843877" elapsed="13.737510">Variable '${new_username}' not found.</status>
+</test>
+<status status="FAIL" start="2024-01-26T14:22:18.241679" elapsed="14.341324"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="updateUserSettings">updateUserSettings</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-01-26T14:22:18.350877" level="ERROR">Error in file '/Users/antkiew/VSC_DawidAntkiewicz/ConduitTestswithRobotFramework/Tests/updateUserSettings.robot' on line 2: Processing variable file '/Users/antkiew/VSC_DawidAntkiewicz/ConduitTestswithRobotFramework/Resources/variables.py' failed: Importing variable file '/Users/antkiew/VSC_DawidAntkiewicz/ConduitTestswithRobotFramework/Resources/variables.py' failed: TypeError: can only concatenate str (not "int") to str
+Traceback (most recent call last):
+  File "/Users/antkiew/VSC_DawidAntkiewicz/ConduitTestswithRobotFramework/Resources/variables.py", line 4, in &lt;module&gt;
+    new_username='uzytkownik' + random_number
+PYTHONPATH:
+  /Users/antkiew/VSC_DawidAntkiewicz/ConduitTestswithRobotFramework/Resources
+  /Library/Frameworks/Python.framework/Versions/3.10/bin
+  /Library/Frameworks/Python.framework/Versions/3.10/lib/python310.zip
+  /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10
+  /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload
+  /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages</msg>
+</errors>
+</robot>
